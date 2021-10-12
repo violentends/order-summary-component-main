@@ -12,6 +12,15 @@
          href="./images/favicon-32x32.png"
       />
 
+      <!-- include google fonts per style guide -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+         rel="stylesheet"
+      />
+
+      <link rel="stylesheet" href="styles.css" />
       <title>Frontend Mentor | Order summary card</title>
 
       <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,26 +35,29 @@
       </style>
    </head>
    <body>
-      <div id="component">
-         <header class="hero">
-            <img src="images/illustration-hero.svg" alt="" srcset="" />
+      <article class="order-component">
+         <header class="hero"></header>
+
+         <section class="copy">
             <h1>Order Summary</h1>
-         </header>
+            <p>
+               You can now listen to millions of songs, audiobooks, and podcasts
+               on any device anywhere you like!
+            </p>
+         </section>
 
-         <p>
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
-         </p>
-
-         <div class="plan">
-            <h1>Annual Plan</h1>
-            <p>$59.99/year</p>
-            <button>Change</button>
-         </div>
+         <section class="plan">
+            <img src="images/icon-music.svg" alt="" />
+            <div class="copy">
+               <h1>Annual Plan</h1>
+               <p>$59.99/year</p>
+            </div>
+            <a href="#">Change</a>
+         </section>
 
          <button class="pay">Proceed to Payment</button>
          <button class="cancel">Cancel Order</button>
-      </div>
+      </article>
 
       <div class="attribution">
          Challenge by
